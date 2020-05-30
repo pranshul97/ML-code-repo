@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 #Header_Section End
 #Data_Processing Start
-dataset=pd.read_csv('Churn_Modelling.csv')
+dataset=pd.read_csv('/gitfiles/Churn_Modelling.csv')
 geography=pd.get_dummies(dataset['Geography'],drop_first=True)
 gender=pd.get_dummies(dataset['Gender'],drop_first=True)
 X=dataset[['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']]
