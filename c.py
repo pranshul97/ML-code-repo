@@ -1,6 +1,7 @@
 #Header_Section Start
 import pandas as pd
 from keras.models import Sequential
+from keras.layers import Dense
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
